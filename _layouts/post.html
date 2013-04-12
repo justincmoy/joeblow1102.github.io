@@ -1,8 +1,16 @@
 <html>
     <head>
         <title>Justin Moy's Blog - {{ page.title }}</title>
+        {% include css/columns.css %}
     </head>
     <body>
-        {{ content }}
+        <div id="container">
+            <div id="left-column">
+                <h3>Justin Moy<br/>{{ page.title }}</h3>
+            </div>
+            <div id="right-column">
+                {{ content }}
+            </div>
+        </div>
     </body>
 </html>
