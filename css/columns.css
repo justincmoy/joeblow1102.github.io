@@ -15,6 +15,7 @@ html, body {
     background-color: lightgray;
     text-align: right;
     padding: 5px 10px 5px 5px;
+    min-height: 100%;
 }
 
 #left-column a:active, #left-column a:hover, #left-column a:link, #left-column a:visited {
