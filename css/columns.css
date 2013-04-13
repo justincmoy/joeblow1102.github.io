@@ -5,9 +5,20 @@ html, body {
 }
 
 div.container {
-    width: 768px;
     margin-left: auto;
     margin-right: auto;
+}
+/* Default mobile screen */
+div.container {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* Desktop-sized screen */
+@media screen and (min-width: 1024px) {
+    div.container {
+        width: 768px
+    }
 }
 
 div.main {
