@@ -1,21 +1,22 @@
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-#container {
+div.container {
     width: 768px;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#left-column {
-    float: left;
-    width: 200px;
-    background-color: lightgray;
-    text-align: right;
-    padding: 5px 10px 5px 5px;
+div.main {
     min-height: 100%;
+}
+
+#left-column {
+    padding-top: 1px;
+    border-bottom: thin solid black;
 }
 
 #left-column a:active, #left-column a:hover, #left-column a:link, #left-column a:visited {
@@ -24,12 +25,19 @@ html, body {
 }
 
 #right-column {
-    margin-left: 220px;
-    width: 568px;
-    padding: 5px;
+    overflow: auto;
+    padding-bottom: 125px;
 }
 
-#post-date {
+div.footer {
+    margin-top:-75px;
+    height: 50px;
+    clear: both;
+    border-top: thin solid black;
+    padding-top: 5px;
+}
+
+span.right {
     text-align: right;
     float: right;
 }
