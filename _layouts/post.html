@@ -5,10 +5,9 @@
     </head>
     <body>
         <div id="container">
-            <div id="left-column">
-                <h3>Justin Moy<br/>{{ page.title }}</h3>
-            </div>
+            {% include left-column.html %}
             <div id="right-column">
+                <h3>{{ page.title }}</h3>
                 {{ content }}
             </div>
         </div>

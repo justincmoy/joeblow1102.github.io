@@ -1,8 +1,14 @@
 <html>
     <head>
         <title>Justin Moy's Blog - {{ page.title }}</title>
+        <link rel="stylesheet" href="/css/columns.css" type="text/css"/>
     </head>
     <body>
-        {{ content }}
+        <div id="container">
+            {% include left-column.html %}
+            <div id="right-column">
+                {{ content }}
+            </div>
+        </div>
     </body>
 </html>
