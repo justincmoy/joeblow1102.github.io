@@ -1,5 +1,10 @@
 #container {
     width: 768px;
+<<<<<<< HEAD
+=======
+    margin-left: auto;
+    margin-right: auto;
+>>>>>>> Update default layout
 }
 
 #left-column {
