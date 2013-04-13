@@ -23,3 +23,8 @@
     width: 568px;
     padding: 5px;
 }
+
+#post-date {
+    text-align: right;
+    float: right;
+}
