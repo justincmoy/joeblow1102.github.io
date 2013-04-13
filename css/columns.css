@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 #container {
     width: 768px;
     margin-left: auto;
@@ -10,7 +14,7 @@
     background-color: lightgray;
     text-align: right;
     padding: 5px 10px 5px 5px;
-    height: 100%;
+    min-height: 100%;
 }
 
 #left-column a:active, #left-column a:hover, #left-column a:link, #left-column a:visited {
