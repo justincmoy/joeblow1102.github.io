@@ -13,6 +13,11 @@
     height: 100%;
 }
 
+#left-column a:active, #left-column a:hover, #left-column a:link, #left-column a:visited {
+    color: black;
+    text-decoration: none;
+}
+
 #right-column {
     margin-left: 220px;
     width: 568px;
