@@ -5,13 +5,13 @@ title: Home
 {% assign counter=0 %}
 {% for post in site.posts %}
     {% if counter == 0 %}
-        <h1>
+        <h1>{{ post.title }}<span class="right">{{ post.date|date_to_string }}</span></h1>
+        {{ post.content }}
     {% elsif counter == 1 %}
-        <hr>previous posts
-    {% endif %}
-    {{ post.date | date_to_string }}: <a href="{{ post.url }}">{{ post.title }}</a><br>
-    {% if counter == 0 %}
-        </h1>{{ post.content }}
+        <hr>previous posts<br>
+        {{ post.date | date_to_string }}: <a href="{{ post.url }}">{{ post.title }}</a><br>
+    {% else %}
+        {{ post.date | date_to_string }}: <a href="{{ post.url }}">{{ post.title }}</a><br>
     {% endif %}
     {% assign counter=counter | plus:1 %}
 {% endfor %}
