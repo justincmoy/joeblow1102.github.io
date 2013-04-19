@@ -13,6 +13,13 @@
             <div id="right-column">
                 <h1>{{ page.title }}<span class="right">{{ page.date|date_to_string }}</span></h1>
                 {{ content }}
+                <hr>
+                {% if page.previous.url %}
+                    Previous: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+                {% endif %}
+                {% if page.next.url %}
+                    <span class="right">Next: <a href="{{ page.next.url }}">{{ page.next.title }}</a></span>
+                {% endif %}
             </div>
         </div>
         {% include footer.html %}
